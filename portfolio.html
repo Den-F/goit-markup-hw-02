@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -12,89 +17,89 @@
     <!-- Шапка сайта -->
     <header>
         <nav>
-            <ul class="site-nav">
+            <ul class="site-nav list">
                 <li>
-                    <a lang="en" href="./index.html" class="logo">WebStudio</a>
+                    <a lang="en" href="./index.html" class="logo"><span class="accent">Web</span>WebStudio</a>
+                
                 </li>
                 <li>
-                    <a href="./index.html">Студия</a>
+                    <a href="./index.html" class="link">Студия</a>
                 </li>
                 <li>
-                    <a href="./portfolio.html">Портфолио</a>
+                    <a href="./portfolio.html" class="link current">Портфолио</a>
                 </li>
                 <li>
-                    <a href="">Контакты</a>
+                    <a href="" class="link">Контакты</a>
                 </li>
             </ul>
-        </nav>
-        <ul class="contakts">
-            <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>
+            </nav>
+            <ul class="contakts">
+                <li>
+                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
     </header>
 
     <main>
-    <section>
-        <h1>Навигация по сайту</h1>
-        <ul>
-            <li><a href="">Все</a></li>
-            <li><a href="">Веб сайты</a></li>
-            <li><a href="">Приложения</a></li>
-            <li><a href="">Дизайн</a></li>
-            <li><a href="">Маркетинг</a></li>
+    <section class="filter">
+        <h1 class="filter-title">Навигация по сайту</h1>
+        <ul class="bt-list">
+            <button class="bt-all" type="button">Все</button>
+            <button class="bt-site" type="button">Веб сайты</button>
+            <button class="bt-app" type="button">Приложения</button>
+            <button class="bt-marketing" type="button">Маркетинг</button>
         </ul>
     </section>
 
-    <section>
-        <h2>Портфолио</h2>
+    <section class="portfolio">
+        <h2 class="portfolio-title">Портфолио</h2>
         <ul>
             <li>
-                <img src="./images/img011.jpeg" alt="">
-                 <h1>Технокряк</h1>
+                <img src="./images/img011.jpeg" alt="Ноутбук с фото на экране" width="370">
+                 <h3>Технокряк</h3>
                  <p>Веб сайт</p>
             </li>
             <li>
-                <img src="./images/img022.jpeg" alt="">
-                <h1>Постер New Orlean vs Golden Star</h1>
+                <img src="./images/img022.jpeg" alt="Баскетболисты в прыжке" width="370">
+                <h3>Постер<span lang="en">New Orlean vs Golden Star</span></h3>
                 <p>Дизайн</p>
             </li>
             <li>
-                <img src="./images/img033.jpeg" alt="">
-                <h1>Ресторан Seeafood</h1>
+                <img src="./images/img033.jpeg" alt="Логотип ресторана" width="370">
+                <h3>Ресторан<span lang="en">Seeafood</span></h3>
                  <p>Приложение</p>
            </li>
             <li>
-                <img src="./images/img044.jpeg" alt="">
-                <h1>Проект Prime</h1>
+                <img src="./images/img044.jpeg" alt="Наушники" width="370">
+                <h3>Проект<span lang="en">Prime</span></h3>
                 <p>Маркетинг</p>
             </li>
             <li>
-                <img src="./images/img055.jpeg" alt="">
-                <h1>Проект Boxes</h1>
+                <img src="./images/img055.jpeg" alt="Упаковочные коробочки" width="370">
+                <h3>Проект<span lang="en">Boxes</span></h3>
                 <p>Приложение</p>
             </li>
             <li>
-                <img src="./images/img066.jpeg" alt="">
-                <h1>Inspiration has no Borders</h1>
+                <img src="./images/img066.jpeg" alt="Монитор компьютера с отрытой страницей" width="370">
+                <h3 lang="en">Inspiration has no Borders</h3>
                 <p>Веб сайт</p>
             </li>
             <li>
-                <img src="./images/img077.jpeg" alt="">
-                <h1>Издание Limited Edition</h1>
+                <img src="./images/img077.jpeg" alt="Разворот журнала" width="370">
+                <h3>Издание<span lang="en">Limited Edition</span></h3>
                 <p>Дизайн</p>
             </li>
             <li>
-                <img src="./images/img088.jpeg" alt="">
-                <h1>Проект LAB</h1>
+                <img src="./images/img088.jpeg" alt="Этикетка с лейблом" width="370">
+                <h3>Проект<span lang="en">LAB</span></h3>
                 <p>Маркетинг</p>
             </li>
             <li>
-                <img src="./images/img099.jpeg" alt="">
-                <h1 lang="en">Growing Business</h1>
+                <img src="./images/img099.jpeg" alt="Открытый ноутбук"width="370">
+                <h3 lang="en">Growing Business</h3>
                 <p>Приложение</p>
             </li>
         </ul>
@@ -103,7 +108,7 @@
 </main>
 <!-- Футер -->
     <footer>
-        <a lang="en" class="logo-link" href="">WebStudio</a>
+        <a lang="en" href="" class="logo-link"><span class="accent">Web</span>WebStudio</a>
         <address>
             <ul class="adress">
                 <li>
@@ -115,9 +120,9 @@
                 <li>
                     <a href="tel:+380961111111" class="phone-link">+38 096 111 11 11</a>
                 </li>
-    
+        
             </ul>
-    
+        
         </address>
     </footer>
     
