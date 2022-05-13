@@ -77,9 +77,10 @@ ul {
 }
 /* Button */
 .button {
+  cursor: pointer;
   background-color: var(--accent-color);
   font-family: inherit;
-  color: #ffffff;
+  color: var(--second-text-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -99,7 +100,6 @@ ul {
   
 }
 .feature-list p {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -122,12 +122,10 @@ width: 270px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: 
   letter-spacing: 0.03em;
 }
 .section-team  p {
  color: var(--title-text-color);
- font-weight: 400;
  font-size: 16px;
  line-height: 1.19;
  text-align: 
@@ -171,16 +169,17 @@ footer {
 }
 
 /* Стили для portfolio.html */
-.bt {
-  cursor: pointer;
-  background-color: var(--primari-background-color);
+
+.bt-list {
+  cursor: pointer;  
   font-family: inherit;
+  background-color: var(--primari-background-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primari-text-color);
 }
 .bt-list :hover,
 .bt-list :focus {
@@ -196,7 +195,6 @@ letter-spacing: 0.06em;
 }
 
 .portfolio p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
