@@ -11,55 +11,49 @@ body {
   background-color: var(--primari-background-color);
   color: var(--primari-text-color);
   font-family: "roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
 }
-h2,
-h3,
-h4 {
-  color: var(--primari-text-color);
-}
+
 /* Убирает все точки в ul */
-ul {
+.link {
   list-style: none;
+  text-decoration: none;
 }
 /* header */
-.site-nav .logo {
-  font-family: 'Raleway';
-  font-style: normal;
+.logo {
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  text-decoration: none;
   color: var(--primari-text-color);
 }
 .accent {
-    color: #2196f3;
+  color: #2196f3;
 }
 
 .site-nav :hover,
 .site-nav :focus {
   color: var(--accent-color);
 }
-.site-nav a {
+.nav-link,
+.contakt-link {
   color: var(--primari-text-color);
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.42;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-nav .link.current {
+.nav-link.current {
   color: var(--accent-color);
 }
-.contakts a {
+.contakt-link {
   color: var(--title-text-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.42;
-  letter-spacing: 0.02em;
 }
-.contakts :hover,
-.contakts :focus {
+.contakts-list :hover,
+.contakts-list :focus {
   color: var(--accent-color);
 }
 /* Стили для index.html */
@@ -67,13 +61,15 @@ ul {
 /* Hero */
 .hero {
   background-color: var(--second-background-color);
+}
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--second-text-color); 
+  color: var(--second-text-color);
 }
 /* Button */
 .button {
@@ -84,7 +80,7 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /* display: flex не могу понять значение этой функции */
+  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -92,93 +88,70 @@ ul {
 /* SECTION */
 /* Секция особенности */
 .title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
-.feature-list p {
-  font-size: 14px;
+
+.feature-title {
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature-description {
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-
+/* .section-feature p {
+  width: 270px;
+} */
 /* Чем мы занимаемся  */
-.section-title {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
-}
-.section-feature p {
-width: 270px;
-}
 
 /* Команда */
-.section-team h3 {
+.team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
-.section-team  p {
- color: var(--title-text-color);
- font-size: 16px;
- line-height: 1.19;
- text-align: 
- letter-spacing: 0.03em;
+.team-position {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.19;
 }
 footer {
   color: var(--primari-background-color);
   background-color: var(--second-background-color);
 }
-.logo-link {
+.footer .logo {
   color: var(--second-text-color);
+}
+.footer .contakt-link {
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  font-family: "Raleway";
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  font-weight: 400;
 }
 .adress-link {
   color: var(--second-text-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration: none;
+  font-style: normal;
 }
-.adress :hover,
-.adress :focus {
+.adress-list :hover {
   color: var(--accent-color);
 }
-
-.mail-link,
-.phone-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
+.adress-list :focus {
+  color: var(--accent-color);
 }
 
 /* Стили для portfolio.html */
 
 .bt-list {
-  cursor: pointer;  
+  cursor: pointer;
   font-family: inherit;
   background-color: var(--primari-background-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primari-text-color);
 }
 .bt-list :hover,
@@ -187,16 +160,15 @@ footer {
   color: var(--primari-background-color);
 }
 
-.portfolio h3 {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
+.portfolio-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
-.portfolio p {
+.portfolio-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
