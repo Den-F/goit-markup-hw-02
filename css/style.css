@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --primari-text-color: #212121;
   --title-text-color: #757575;
@@ -15,7 +21,7 @@ body {
 
 /* Убирает все точки в ul */
 .list {
-    list-style: none;
+  list-style: none;
 }
 .link {
   text-decoration: none;
@@ -88,10 +94,9 @@ body {
 
 .button-hero:hover,
 .button-hero:focus {
-    background-color:#188CE8 ; 
-
+  background-color: #188ce8;
 }
- 
+
 /* SECTION */
 /* Секция особенности */
 .title {
@@ -101,54 +106,54 @@ body {
 }
 
 .feature-title {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .feature-description {
-    font-weight: 400;
- font-size: 14px;
- line-height: 1.71;
- letter-spacing: 0.03em;
- color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 .section-feature p {
   width: 270px;
 }
 /* Чем мы занимаемся  */
-  .doing-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-  }
+.doing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 
 /* Команда */
 .team-name {
-    background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 .team-title {
- font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19; 
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .team-position {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.19;
-  font-weight: 400; 
+  font-weight: 400;
   letter-spacing: 0.03em;
 }
 footer {
@@ -177,13 +182,11 @@ footer {
 
 /* Стили для portfolio.html */
 
-
 .btn-filter.current {
-    background-color: var(--accent-color);
-    color: var(--second-text-color);
+  background-color: var(--accent-color);
+  color: var(--second-text-color);
 }
 .btn-filter {
-  
   cursor: pointer;
   font-family: inherit;
   background: #f5f4fa;
@@ -201,17 +204,15 @@ footer {
 }
 
 .portfolio-subtitle {
-    color: #212121;
+  color: #212121;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  
 }
 
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--title-text-color);
-  
 }
