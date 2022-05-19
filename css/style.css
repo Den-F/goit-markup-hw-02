@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+outlain
 :root {
   --primari-text-color: #212121;
   --title-text-color: #757575;
@@ -51,6 +52,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  outlain: 
 }
 .nav-link.current {
   color: var(--accent-color);
@@ -104,7 +106,19 @@ body {
   line-height: 1.17;
   text-align: center; */
 }
-
+/* Семантическое скрытие элементов */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
 .feature-title {
   font-weight: 700;
   font-size: 14px;
